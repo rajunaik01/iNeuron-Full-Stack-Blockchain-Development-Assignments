@@ -15,19 +15,23 @@ contract structure {
     function setBook() public {
         book = Book("Blokchain for beginners", "Ineuron", 4, 1000);
     }
-
+    
+    //23529 gas (Cost only applies when called by a contract)
     function getBookId() public view returns (uint) {
         return book.bookID;
     }
 
+    //23485 gas (Cost only applies when called by a contract)
     function getBookTitle() public view returns (string memory) {
         return book.title;
     }
-
+    
+    //24599 gas (Cost only applies when called by a contract)
     function getBookAuthor() public view returns (string memory) {
         return book.author;
     }
    
+    //23485 gas (Cost only applies when called by a contract)
     function getBookPrice() public view returns (uint) {
         return book.price;
     }
